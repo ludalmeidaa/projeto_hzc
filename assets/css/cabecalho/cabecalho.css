@@ -1,0 +1,26 @@
+@import url(../cabecalho/cabecalho-logo.css);
+@import url(../cabecalho/cabecalho-menu.css);
+@import url(../cabecalho/cabecalho-notificacao.css);
+@import url(../cabecalho/cabecalho-perfil.css);
+
+.cabecalho {
+    align-items: center;
+    background-color: var(--preto);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        background-color: var(--azul-bem-escuro);
+        box-sizing: border-box;
+        column-gap: 32px;
+        display: grid;
+        grid-column: 2;
+        grid-template-columns: 1fr auto;
+        height: 80px;
+        padding: 16px 60px;
+    }
+}

@@ -1,0 +1,55 @@
+.secao {
+    display: grid;
+    gap: 16px;
+    padding-top: 10px;
+}
+
+.secao h3 {
+    display: block;
+}
+
+@media screen and (min-width: 1440px) {
+    .secao {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .destaque-video {
+        grid-area: destaque-video;
+    }
+    
+    .videos-recentes {
+        grid-area: videos-recentes;
+    }
+    
+    .secao-videos {
+        grid-area: secao-videos;
+    }
+    
+    .destaque-produtos {
+        grid-area: destaque-produtos;
+        padding-top: 10px;
+    }
+    
+    .produtos-recentes {
+        grid-area: produtos-recentes;
+    }
+    
+    .secao-produtos {
+        grid-area: secao-produtos;
+    }
+
+    .titulo-secao__camisas {
+        height: 1em;
+    }
+}
+
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+    .titulo-secao {
+        grid-column: span 4;
+    }
+}

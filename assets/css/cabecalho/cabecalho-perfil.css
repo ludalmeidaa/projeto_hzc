@@ -1,0 +1,30 @@
+.cabecalho__perfil {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho__perfil {
+        align-items: center;
+        border-right: 1px solid var(--cinza-claro);
+        column-gap: 8px;
+        color: var(--cinza-claro);
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-self: flex-end;
+        padding: 8px 32px;
+    }
+
+    .cabecalho__perfil::before {
+        background: url(../../img/produto_2.png) contain no-repeat center;
+        content: "";
+        display: block;
+        height: 32px;
+        width: 32px;
+    }
+
+    .cabecalho__perfil::after {
+        color: var(--branco);
+        content: "\e90d";
+        font-size: 1.5rem;
+    }
+}

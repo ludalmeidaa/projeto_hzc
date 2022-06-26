@@ -1,0 +1,53 @@
+.menu-lateral__link {
+    align-items: center;
+    color: var(--cinza-claro);
+    display: flex;
+    height: 64px;
+    padding-left: 64px;
+
+}
+
+.menu-lateral__link--ativo {
+    color: var(--branco);
+    border-left: 8px solid var(--branco);
+    padding-left: 56px;
+}
+
+.menu-lateral__link::before {
+    content: "";
+    font-size: 24px;
+    height: 24px;
+    left: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.menu-lateral__link--início::before {
+    content:"\e902";
+
+}
+
+.menu-lateral__link--vídeos::before {
+    content:"\e90e";
+    
+}
+
+.menu-lateral__link--picos::before {
+    content:"\e909";
+    
+}
+
+.menu-lateral__link--integrantes::before {
+    content:"\e903";
+    
+}
+
+.menu-lateral__link--camisas::before {
+    content:"\e900";
+    
+}
+
+.menu-lateral__link--pinturas::before {
+    content:"\e90a";
+    
+}

@@ -1,0 +1,177 @@
+.cartao {
+    background-color: var(--cinza-escuro);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cartao__imagem--desktop {
+    display: none;
+}
+
+.cartao--destaque {
+    margin-bottom: 16px;
+}
+
+.cartao__conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 16px;
+
+}
+
+.cartao__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartao__destaque {
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartao__perfil {
+    color: var(--cinza-claro);
+    font-size: 0.9rem;
+    grid-column: span 2;
+    margin-top: 8px;
+}
+
+.cartao__info {
+    align-items: center;
+    color: var(--cinza-claro);
+    display: flex;
+}
+
+.cartao__info--preco::before {
+    content: "\e905";
+    margin-right: 8px;
+}
+
+.cartao__info--tempo::before {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.cartao__info--visualizacao::before {
+    content: "\e90f";
+    margin-right: 9px;
+}
+
+.cartao__botao {
+    align-items: center;
+    background-color: var(--azul);
+    border-radius: 10px;
+    display: flex;
+    font-size: 0.9rem;
+    height: 40px;
+    justify-content: center;
+    justify-self: flex-end;
+    width: 40px;
+}
+
+.cartao__botao--preco {
+    align-items: center;
+    background-color: var(--azul);
+    border-radius: 10px;
+    display: flex;
+    font-size: 0.9rem;
+    height: 40px;
+    justify-content: center;
+    width: 200px;
+}
+
+.cartao__botao--play::before {
+    content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao__botao--destaque{
+    grid-column: span 2;
+    width: 100%;
+}
+
+.cartao__botao--destaque::before {
+    margin-right: 8px;
+}
+
+.cartao__botao--preco::before {
+    content: "\e901";
+    font-size: 24px;
+}
+
+.cartao--recentes {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .cartao--destaque {
+        margin-bottom: 0;
+    }
+    
+    .cartao__imagem--mobile {
+        display: none;
+    }
+
+    .cartao__imagem--desktop {
+        display: block;
+    }
+
+    .cartao__botao--destaque {
+        grid-column: auto;
+        padding: 16px 8px;
+    }
+
+    .cartao--recentes {
+        align-items: center;
+        align-self: flex-start;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 24px;
+        padding: 16px;
+        width: 256px;
+    }
+
+    .cartao--recentes .cartao__titulo {
+        grid-column: auto;
+    }
+    
+    .cartao__link {
+        color: var(--azul);
+        font-size: 0.8rem;
+        font-weight: 600;
+        justify-self: flex-end;
+    }
+
+    .cartao__lista {
+        display: grid;
+        grid-column: span 2;
+        row-gap: 16px;
+    }
+
+    .cartao__item {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: auto 1fr;
+    }
+
+    .cartao__item-thumbnail {
+        grid-row: span 2;
+        width: 32px;
+    }
+
+    .cartao__item-titulo {
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1.2rem;
+    }
+
+    .cartao__item-perfil {
+        font-size: 0.8rem;
+        color: var(--cinza-claro);
+    }
+
+}

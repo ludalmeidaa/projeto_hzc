@@ -1,0 +1,28 @@
+@import url(../menuLateral/menuLateral-link.css);
+@import url(../menuLateral/menuLateral-logo.css);
+
+.menu-lateral {
+    background-color: var(--preto);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    left: -100vw;
+    position: absolute;
+    transition: .25s;
+    width: 75vw;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
+}
+
+@media screen and (min-width: 1440px) {
+    .menu-lateral {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        position: static;
+        width: 200px;
+    }
+    
+}

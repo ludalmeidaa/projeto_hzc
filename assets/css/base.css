@@ -1,0 +1,26 @@
+:root {
+    --azul-bem-escuro: #1D232A;
+    --preto: #15191C;
+    --cinza-escuro: #2C343A;
+    --branco: #FFFFFF;
+    --cinza-claro: #95999C;
+    --azul: #0480DC;
+}
+
+@font-face {
+    src: url(../font/icones.ttf);
+    font-family: 'icones';
+}
+
+body {
+    background-color: var(--azul-bem-escuro);
+    color: var(--branco);
+    font-family: 'Open Sans', 'icones', sans-serif;
+}
+
+@media screen and (min-width: 1440px){
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
